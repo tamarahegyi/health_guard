@@ -1,0 +1,37 @@
+.menu-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+button .startbutton{
+    padding:0.5rem 6rem;
+  }
+
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:20vh;
+  }
+
+  h1{
+    margin-bottom: 40px;
+    font-size:4.5rem ;
+    cursor: default;
+  }
+
+  h4{
+    margin-bottom:30px;
+    color:rgb(215, 250, 231);
+  }
+
+.startbutton:hover{
+  color:rgba(7, 110, 116, 1);
+  background-color: aliceblue;
+}
+
+.startbutton{
+  transition: all 400ms ease;
+}

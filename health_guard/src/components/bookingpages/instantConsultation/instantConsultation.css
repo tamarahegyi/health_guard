@@ -1,0 +1,38 @@
+.searchpage-container {
+    color: #414146;
+    position: static;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgba(219, 252, 255, 1);
+
+}
+.available{
+    margin-top:-550px;}
+.searchpage-container img {
+    max-width: 100%;
+}
+.search-results-container .doctorcard{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 4px;
+    background-color: rgba(219, 252, 255, 1);
+    margin-top: -50px;
+
+}
+
+.search-results-container>h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.search-results-container>h3 {
+    margin-top: 12px;
+    color: #2d2d32;
+    text-align: left;
+    font-size: 15px;
+}

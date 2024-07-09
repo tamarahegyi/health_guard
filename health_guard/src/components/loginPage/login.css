@@ -1,0 +1,107 @@
+
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+.menu-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/*Signup css*/
+
+.submit-signup, .reset-signup{
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    border: white solid 0.2px;
+    transition: all 400ms ease;
+    display:inline;
+    margin: auto;
+    width:30%;
+    
+    
+  }
+  .btn-group{
+    display: flex;
+    padding:0.5rem 20rem;
+    text-align: center;
+  }
+  
+  .submit-signup:hover{
+    color:rgb(32, 110, 110);
+    background-color: azure;
+  }
+
+  .reset-signup:hover{
+    background-color:rgba(151, 43, 43, 0.997);
+  }
+
+  .reset-signup{
+    background-color: rgba(241, 155, 155, 1);
+    color: #fff;
+  }
+
+  .alreadymember-login:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+  .form-group {
+    width:50%;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: justify;
+    color:white;
+  }
+  
+  .form-control {
+    width: 50%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .signup-text{
+    margin-top:3vh;
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .signup-text1{
+    margin-top:-15px;
+    text-align: center;
+  }
+
+  .signup-form{
+    width: 30%;
+  }
