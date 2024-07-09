@@ -60,9 +60,8 @@ const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => 
               {appointments.length > 0 ? (
                 <div>Cancel Appointment</div>
               ) : (
-                <div>Book Appointment</div>
+                <div className='booking-btn'><br></br></div>
               )}
-              <div>No Booking Fee</div>
             </button>
           }
           modal
@@ -86,7 +85,7 @@ const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => 
 
               {appointments.length > 0 ? (
                 <>
-                  <h3 className="booked-appointment" style={{ textAlign: 'center'}}>Appointment Booked!</h3>
+                  <h3 className="booked-appointment" >Appointment Booked!</h3>
                   {appointments.map((appointment) => (
                     <div className="bookedInfo" key={appointment.id}>
                       <p className='booking-role'>Role:   <span className='userrole'>{appointment.role}</span></p>

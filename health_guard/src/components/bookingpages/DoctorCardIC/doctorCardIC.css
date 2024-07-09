@@ -1,130 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+
 .doctor-card-container {
-    width: 300px;
-    height: 100%;
-    border: 3px solid rgba(59, 165, 171, 0.89);
-    border-radius: 8px;
-    overflow: hidden;
-    display: inline-block;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    background-color: rgba(95, 142, 145, 1);
-  }
-  .cancel-appointment {
-    background-color:rgba(177, 79, 85, 0.64);
-  }
-  .cancelAppointment{
-    background-color: #d63027;
-    margin-left:270px;
+  width: 300px;
+  height: 50%;
+  border: 3px solid rgba(59, 165, 171, 0.89);
+  border-radius: 8px;
+  display: inline-block;
+  margin: 2vh 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(95, 142, 145, 1);
+}
 
-  }
-  .tanks{
-    text-align: center;
-  }
-  .booking-name{
-    text-align: center;
-  }
-  .userrole{
-    text-decoration: underline;
-  }
-  .username{
-    text-decoration: underline;
-  }
-  .booking-role{
-    text-align: center;
-  }
-  .usernumber{
-    text-decoration: underline;
-  }
-  .usertime{
-    text-decoration: underline;
-  }
-  .userdate{
-    text-decoration: underline;
-  }
-  .booking-number{
-    text-align: center;
-  }
+.doctor-card-details-container {
+  padding: 20px;
+}
 
-  .booking-date{
-    text-align: center;
-  }
-  .booking-time{
-    text-align: center;
-  }
-  .doctor-card-details-container {
-    padding: 20px;
-  }
-  
-  .doctor-card-profile-image-container {
-    text-align: center;
-    margin-top:10px;
-    margin-bottom:10px;
-  }
-  
-  .doctor-card-profile-image-container img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom:20px;
-  }
-  
-  .doctor-card-details {
-    text-align: center;
-  }
-  
-  .doctor-card-detail-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color:white;
-  }
-  
-  .doctor-card-detail-speciality {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color:white;
-  }
-  
-  .doctor-card-detail-experience {
-    font-size: 14px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color:white;
-  }
+.doctor-card-profile-image-container {
+  text-align: center;
+  margin: 10px 0;
+}
 
-  
-  .doctor-card-detail-location,
-  .doctor-card-detail-clinic,
-  .doctor-card-detail-consultationfees {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .doctor-card-detail-consultationfees{
-    font-weight: bold;
-    
-  }
-  
-  .book-appoinment-btn {
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.doctor-card-profile-image-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
-  #book-appointment{
-    width:100%;
-    margin-bottom:0px;
-  }
-  
-  .book-appoinment-btn div:nth-child(2) {
-    font-size: 12px;
-    font-weight: bold;
-    background-color: rgba(10, 101, 107, 1);
-  }
-  .modal-container {
+.doctor-card-details {
+  text-align: center;
+}
+
+.doctor-card-detail-name,
+.doctor-card-detail-speciality,
+.doctor-card-detail-experience,
+.doctor-card-detail-location,
+.doctor-card-detail-clinic,
+.doctor-card-detail-consultationfees {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.doctor-card-detail-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.doctor-card-detail-speciality {
+  font-size: 16px;
+}
+
+.doctor-card-detail-experience,
+.doctor-card-detail-consultationfees {
+  font-weight: bold;
+}
+
+.book-appoinment-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba(10, 101, 107, 1);
+  transition: background-color 0.3s ease;
+}
+
+.book-appoinment-btn:hover {
+  background-color: rgba(7, 110, 116, 1);
+}
+
+.cancel-appointment-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-appointment-btn:hover {
+  background-color: #d63027;
+}
+
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -163,42 +143,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.doctorbg{
-background-color: rgba(53, 158, 163, 1);
-padding-top:10px;
-
-
-}
-.booked-appointment{
-  margin-top:70px;
-}
 
 .modal-btn:hover {
   background-color: #0d8af5;
-}
-
-.cancel-appointment-btn {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #f44336;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cancel-appointment-btn:hover {
-  background-color: #d63027;
-}
-.appointment-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  /* height: auto;
-  overflow-y: auto; */
 }
 
 .form-group {
@@ -209,12 +156,13 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
+  color: white;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 17px 2px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
@@ -225,24 +173,86 @@ button {
   background-color: rgba(53, 158, 163, 1);
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 2rem;
   cursor: pointer;
   font-size: 14px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
 
-margin-bottom:10px;
+#book-appointment{
+  background-color: rgb(209, 219, 150);
+  width:100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0;
 }
-.profile{
-  width:10%;
-  margin-top:10px;
+.booking-btn::after{
+  content:'Book an Appointment';
 }
+
+.booking-btn:hover::after{
+  color:black;
+  content:'Book Now!';
+}
+
+.booking-btn:hover{
+  color:transparent;
+}
+.booking-btn{
+  background-color: rgb(209, 219, 150);
+  color:rgb(50, 49, 49);}
 
 button:hover {
   background-color: rgba(172, 204, 206, 1);
 }
 
+.profile {
+  width: 10%;
+  margin-top: 10px;
+}
 
-.btnslot{
+.booked-appointment {
+  margin-top: 70px;
+}
+.popup-content{
+  background-color: rgba(7, 110, 116, 1);
+}
+
+#role1,
+#name1,
+#number1,
+#date1,
+#time1 {
+  color: white;
+}
+
+.cancel-appointment {
+  background-color: rgba(177, 79, 85, 0.64);
+}
+
+.cancelAppointment {
+  background-color: #d63027;
+  margin-left: 270px;
+}
+
+.tanks,
+.booking-name,
+.userrole,
+.username,
+.booking-role,
+.usernumber,
+.usertime,
+.userdate,
+.booking-number,
+.booking-date,
+.booking-time {
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.btnslot {
   background-color: green;
   cursor: pointer;
-  /* color: rgb(249, 60, 60); */
 }
+

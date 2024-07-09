@@ -43,7 +43,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
       doctorSpeciality,
   };
 
-    const loggedInUser = localStorage.getItem("signUp");
+    const loggedInUser = sessionStorage.getItem("signUp");
 
     if (loggedInUser) {
       const newAppointment = {
@@ -75,7 +75,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
   };
 
   const handleAppointmentCancel = () => {
-    const loggedInUser = localStorage.getItem("signUp");
+    const loggedInUser = sessionStorage.getItem("signUp");
     if (loggedInUser && bookingDetails) {
       let localAppointments = JSON.parse(localStorage.getItem("appointments")) || {};
       localAppointments[loggedInUser] = localAppointments[loggedInUser].filter(appointment => appointment.id !== bookingDetails.id);
@@ -168,7 +168,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
             <p className='booking-number'><strong>Phone Number:</strong> <span className="usernumber">{bookingDetails.phoneNumber}</span></p>
             <p className='booking-date'><strong>Date:</strong> <span className="userdate">{bookingDetails.date}</span></p>
             <p className='booking-time'><strong>Time:</strong> <span className="userrole">{bookingDetails.time}</span></p>
-            <a href="./FindDoctorSearchIC"className='appointments1'><p>Back to appointments page</p></a>
+            <a href="./FindDoctorSearchIC"className='appointments1'>Back to appointments page</a>
             <button className="Cancel-button2"onClick={handleAppointmentCancel}>Cancel Appointment</button>
           </div>
         </div>

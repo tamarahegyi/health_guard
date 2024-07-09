@@ -1,5 +1,5 @@
 .submit{
-    width:70%;
+   width:70%;
    font-size: small;
    border-radius: 50%;
    margin-left:60px;
@@ -9,31 +9,12 @@
     width:70%;
 }
 .booking-input{
-    cursor: pointer;
-}
-.booking-input{
     height: 1vh;
+    cursor: pointer;
+    padding:px 7px;
 }
-.booking-details{
-    text-align: center;
-}
-
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:darkcyan;
-  }
   
   .popup-content {
-    background:white;
-    padding: 20px;
     border-radius: 5px;
     max-width: 500px;
     width: 100%;
@@ -48,8 +29,30 @@
     margin: 5px 0;
   }
   
+  /*copied popup*/
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    color:darkcyan;
+    text-align: left;
+  }
+  
+  .popup-content {
+    width: 100%;
+  }
+  
+  .popup-content p {
+    margin: 5px 0;
+  }
+  
   .Cancel-button2 {
-    background: #ff4d4d;
+    background: #d38c8c;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -59,23 +62,22 @@
   }
   
   .Cancel-button2:hover {
-    background: #ff1a1a;
+    background: #ff4d4d
   }
   .Cancel-button2{
     display: block;
-    margin: auto;
     width:100%;
     text-align: center;
+    margin-top:10px;
   }
   .appointments1{
-    color:rgb(3, 3, 62);
+    color:rgb(182, 179, 179);
     text-align: center;
     font-size: medium;
+    text-decoration: underline;
+    margin-top:10px;
+
   }
   .appointments:hover{
     color:darkgrey;
-  }
-
-  #role1, #name1, #date1, #time1, #number1{
-    color:rgba(10, 101, 107, 1);
   }

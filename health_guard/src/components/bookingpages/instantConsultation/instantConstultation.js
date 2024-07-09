@@ -71,7 +71,7 @@ const InstantConsultation = () => {
                     {filteredDoctors.length > 0 ? (
                     filteredDoctors.map(doctor => <DoctorCardIC className="doctorcard" {...doctor} key={doctor.name} />)
                     ) : (
-                    <p>No doctors found.</p>
+                    <p className='no-doctors-found'>No doctors found</p>
                     )}
                 </center>
                 ) : (
