@@ -12,7 +12,7 @@ const Log_in = () => {
 
 
   useEffect(() => {
-    const localSignUp = localStorage.getItem("signUp");
+    const localSignUp = sessionStorage.getItem("signUp");
     const userLoggedin = sessionStorage.getItem('isLoggedin');
     if (localSignUp) {
       setShowHome(true);

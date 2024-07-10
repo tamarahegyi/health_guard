@@ -28,7 +28,7 @@ const Profile = () => {
     const updatedPhone = phoneRef.current.value;
     const updatedPassword = passwordRef.current.value;
 
-    if (loggedInUser && localUsers[loggedInUser]) {
+    if (loggedInUser && localUsers[loggedInUser] && validateInputs()) {
       localUsers[loggedInUser].email = updatedEmail;
       localUsers[loggedInUser].phone = updatedPhone;
       localUsers[loggedInUser].password = updatedPassword;
@@ -40,6 +40,34 @@ const Profile = () => {
       alert("User is not logged in");
     }
   };
+
+  const validateInputs = () => {
+    const phone = phoneRef.current.value;
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+
+    const phonePattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const passwordPattern = /^(?=(?:.*[A-Za-z]){2})(?=(?:.*\d){2}).{5,}$/;
+
+    if (!phone.match(phonePattern)) {
+      alert("Please enter a valid phone number in the format 123-456-7890");
+      return false;
+    }
+
+    if (!email.match(emailPattern)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+
+    if (!password.match(passwordPattern)) {
+      alert("Password must be at least 5 characters long and contain at least 2 letters and 2 numbers");
+      return false;
+    }
+
+    return true;
+  };
+
 
   return (
     <div className="profile-container">

@@ -1,0 +1,21 @@
+  .success-container {
+    text-align: center;
+    margin-top:12vh;
+  }
+
+  .details-comment{
+    color:grey;
+  }
+  .name1{
+    color: white;
+  }
+  .icon{
+    margin-top:25px;
+    font-size: 5vh;
+  }
+  .user-name2{
+    color:rgb(192, 219, 170);
+    margin-top:30px;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }

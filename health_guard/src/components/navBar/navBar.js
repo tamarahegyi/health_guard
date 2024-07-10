@@ -14,6 +14,7 @@ const NavBar = () => {
 
   const handleLogout = () => {
     sessionStorage.setItem('isLoggedin', 'false');
+    sessionStorage.removeItem('signUp')
     setIsLoggedIn(false);
     window.location.href = '/';
   };

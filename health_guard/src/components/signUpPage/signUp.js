@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Members from '../members/members';
 import './signUp.css';
+import { v4 as uuidv4 } from 'uuid'; 
 
 const Sign_Up = () => {
   const nameRef = useRef();
@@ -9,7 +10,7 @@ const Sign_Up = () => {
   const passwordRef = useRef();
   const [showHome, setShowHome] = useState(false);
   const [show, setShow] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const userLoggedin = sessionStorage.getItem('isLoggedin');
   const localSignUp = sessionStorage.getItem("signUp");
@@ -31,11 +32,13 @@ const Sign_Up = () => {
       const email = emailRef.current.value;
       const password = passwordRef.current.value;
 
-      const newUser = { name, phone, email, password };
-      localUsers[email] = newUser;
+      const newUserId = uuidv4(); 
+      const newUser = { id: newUserId, name, phone, email, password };
+
+      localUsers[newUserId] = newUser;
       localStorage.setItem("users", JSON.stringify(localUsers));
       sessionStorage.setItem('isLoggedin', 'true')
-      sessionStorage.setItem('signUp', email)
+      sessionStorage.setItem('signUp', newUserId)
       alert("Account created successfully!");
       window.location.href = "/members";
     }
@@ -45,7 +48,7 @@ const Sign_Up = () => {
     if (validateInputs()) {
       const email = emailRef.current.value;
       const password = passwordRef.current.value;
-      const user = localUsers[email];
+      const user = Object.values(localUsers).find(user => user.email === email);
 
       if (user && user.password === password && isLoggedIn) {
         sessionStorage.setItem("signUp", email);
@@ -273,3 +276,4 @@ const Sign_Up = () => {
 };
 
 export default Sign_Up;
+
