@@ -35,6 +35,7 @@ const Sign_Up = () => {
       localUsers[email] = newUser;
       localStorage.setItem("users", JSON.stringify(localUsers));
       sessionStorage.setItem('isLoggedin', 'true')
+      sessionStorage.setItem('signUp', email)
       alert("Account created successfully!");
       window.location.href = "/members";
     }

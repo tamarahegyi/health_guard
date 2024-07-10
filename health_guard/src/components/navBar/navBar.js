@@ -99,7 +99,7 @@ const NavBar = () => {
           </div>
           <div className="menu-links">
             <ul className="hamburger-links">
-              <li><a href="/" onClick={toggleMenu}>Home</a></li>
+              <li><a onClick={handleHomeClick}>Home</a></li>
               <li><a onClick={handleAppointmentsClick}>Appointments</a></li>
               <li><a onClick={handleReviewClick}>Reviews</a></li>
               {isLoggedIn ? (

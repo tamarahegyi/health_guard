@@ -42,18 +42,6 @@ const Log_in = () => {
     passwordRef.current.value = "";
   };
 
-  const handleReviewClick = () => {
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
-    const user = localUsers[email];
-
-    if (user && user.password === password) {
-      window.location.href = "/basicLogin";
-    } else {
-      alert("Please sign up or log in before you leave a review");
-    }
-  };
-
   return (
     <div>
       {showHome ? (
@@ -74,7 +62,7 @@ const Log_in = () => {
             <div className="signup-form">
               <form onSubmit={handleLogin}>
                 <div className="form-group">
-                  <label className="email" htmlFor="email">
+                  <label className="email login-email" htmlFor="email">
                     Email
                   </label>
                   <input
@@ -89,7 +77,7 @@ const Log_in = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label className="password" htmlFor="password">
+                  <label className="password  login-password" htmlFor="password">
                     Password
                   </label>
                   <input

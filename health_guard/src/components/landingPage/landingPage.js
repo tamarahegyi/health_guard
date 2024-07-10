@@ -1,8 +1,10 @@
 import React from 'react';
 import './landingPage.css';
 import './mediaqueries.css';
+import { useEffect, useState } from 'react';
 
-const landingPage = () => {
+const LandingPage = () => {
+
   return (<>
     <div id="home">
         <section class="hero-section">
@@ -29,4 +31,4 @@ const landingPage = () => {
   )
 }
 
-export default landingPage;
+export default LandingPage;

@@ -10,6 +10,7 @@ import AppointmentFormIC from './components/bookingpages/appointmentFormIC/appoi
 import DoctorCardIC from './components/bookingpages/DoctorCardIC/doctorCardIC.js';
 import FindDoctorSearchIC from './components/bookingpages/findDoctorSearchIC/findDoctorSearchIC.js';
 import InstantConsultation from './components/bookingpages/instantConsultation/instantConstultation.js';
+import Profile from './components/profile/profile.js';
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/doctorCardIC" element={<DoctorCardIC/>}/>
             <Route path="/findDoctorSearchIC" element={<FindDoctorSearchIC/>}/>
             <Route path="/instantConsultation" element={<InstantConsultation/>}/>
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </BrowserRouter>
         </>

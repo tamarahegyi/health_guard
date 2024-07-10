@@ -75,13 +75,18 @@ a,
     margin-bottom:20px;
   }
   
-  .form-group label {
+  .form-group {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     text-align: justify;
     color:white;
   }
+  .fullname1
+{
+  display: block;
+  margin: auto;
+}
   
   .form-control {
     width: 100%;

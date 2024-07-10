@@ -16,7 +16,7 @@ const Members = () => {
       }
     }, []);
   
-    const logout = () => {
+    /*const logout = () => {
       sessionStorage.removeItem("signUp");
       window.location.reload();
     };
@@ -31,7 +31,7 @@ const Members = () => {
           localStorage.setItem("users", JSON.stringify(localUsers)); // Update localStorage
         }
         window.location.reload(); // Reload the page
-      };
+      };*/
 
   return (
     <div id="home">
@@ -51,7 +51,7 @@ const Members = () => {
     </div>
   </div>
   <div className='btn-group'>
-    <a href="/profile"><button className ="profile-btn" type="button"> Your Profile</button></a>
+    <a href="/profile" ><button className ="profile-btn" type="button"> Your Profile</button></a>
     <a href="/doctorReview"><button className ="reviewform-btn" type="button"> Doctor Reviews</button></a>
  </div>
 </div>
