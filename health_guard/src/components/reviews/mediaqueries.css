@@ -1,0 +1,41 @@
+@media (max-width: 1024px) {
+    .doctor-search {
+      width: 30%;
+      margin-left: 400px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .doctor-search {
+      width: 40%;
+      margin-left: 200px; 
+      font-size: smaller;
+    }
+  
+    .popup-content {
+      max-width: 90%;
+    }
+  
+    .review-submit-btn {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .doctor-search {
+      width: 70%;
+      margin-left: 50px; 
+    }
+  
+    .popup-content {
+      max-width: 100%;
+    }
+  
+    .review-submit-btn {
+      width: 60%;
+    }
+  
+    .name-input2 {
+      width: 100%;
+    }
+  }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import './profile.css';
+import './mediaqueries.css';
 
 const Profile = () => {
   const [userEmail, setUserEmail] = useState('');
@@ -23,17 +24,20 @@ const Profile = () => {
 
   const handleChange = (e) => {
     e.preventDefault();
-
+    const email = sessionStorage.getItem('email');
     const updatedEmail = emailRef.current.value;
     const updatedPhone = phoneRef.current.value;
     const updatedPassword = passwordRef.current.value;
+    
 
-    if (loggedInUser && localUsers[loggedInUser] && validateInputs()) {
+    if (localUsers && localUsers[loggedInUser] && validateInputs()) {
       localUsers[loggedInUser].email = updatedEmail;
       localUsers[loggedInUser].phone = updatedPhone;
       localUsers[loggedInUser].password = updatedPassword;
+      localUsers[loggedInUser].signUp = updatedEmail;
 
       localStorage.setItem("users", JSON.stringify(localUsers));
+
 
       window.location.href = '/success';
     } else {

@@ -47,7 +47,7 @@ const NavBar = () => {
 
   const handleReviewClick = () => {
     if (isLoggedIn) {
-      window.location.href = "/ReviewForm";
+      window.location.href = "/reviews";
     } else {
       alert("Please sign up or log in before you leave a review");
       window.location.href = "/login";
@@ -79,7 +79,7 @@ const NavBar = () => {
             <li><a onClick={handleAppointmentsClick}>Appointments</a></li>
             <li><a onClick={handleReviewClick}>Reviews</a></li>
             {isLoggedIn ? (
-              <a><button className="logout"onClick={handleLogout}>Logout</button></a>
+              <a><button className="logout-nav"onClick={handleLogout}>Logout</button></a>
             ) : (
               <>
                 <a><button onClick={handleLoginClick} className="login" type="button">Log in</button></a>
@@ -104,7 +104,7 @@ const NavBar = () => {
               <li><a onClick={handleAppointmentsClick}>Appointments</a></li>
               <li><a onClick={handleReviewClick}>Reviews</a></li>
               {isLoggedIn ? (
-                <a><button className="logout" onClick={handleLogout}>Logout</button></a>
+                <a><button className="logout-nav" onClick={handleLogout}>Logout</button></a>
               ) : (
                 <>
                   <a><button onClick={handleLoginClick} className="login" type="button">Log in</button></a>

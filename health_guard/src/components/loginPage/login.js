@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Members from "../members/members";
+import './mediaqueries.css'
 
 const Log_in = () => {
   const emailRef = useRef();
@@ -12,12 +13,14 @@ const Log_in = () => {
 
 
   useEffect(() => {
-    const localSignUp = sessionStorage.getItem("signUp");
-    const userLoggedin = sessionStorage.getItem('isLoggedin');
-    if (localSignUp) {
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    const localSignUp = Object.values(localUsers).find(user => user.email === email)
+    const userLoggedin = Object.values(localUsers).find(user => user.password === password)
+    if (localSignUp === 'email') {
       setShowHome(true);
     }
-    if (userLoggedin === 'true') {
+    if (userLoggedin === 'password') {
       setIsLoggedIn(true);
     }
   }, []);
@@ -26,10 +29,10 @@ const Log_in = () => {
     e.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    const user = localUsers[email];
+    const user = Object.values(localUsers).find(user => user.email === email);
 
     if (user && user.password === password) {
-      sessionStorage.setItem("signUp", email);
+      sessionStorage.setItem("signUp", user.id );
       sessionStorage.setItem("isLoggedin", "true");
       window.location.href = "/members";
     } else {

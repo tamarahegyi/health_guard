@@ -13,6 +13,8 @@ import InstantConsultation from './components/bookingpages/instantConsultation/i
 import Profile from './components/profile/profile.js';
 import Success from './components/success/success.js'
 import Notifications from './components/notifications/notifications.js';
+import Reports from './components/reports/reports.js';
+import Reviews from './components/reviews/reviews.js';
 
 
 
@@ -34,6 +36,8 @@ function App() {
             <Route path="/instantConsultation" element={<InstantConsultation/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/success" element={<Success/>}/>
+            <Route path="/reports" element={<Reports/>}/>
+            <Route path='/reviews' element={<Reviews/>}/>
           </Routes>
           </Notifications>
         </BrowserRouter>

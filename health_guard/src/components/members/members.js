@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect,useState } from 'react';
 import './members.css';
+import './mediaqueries.css'
 
 const Members = () => {
 
@@ -52,7 +53,7 @@ const Members = () => {
   </div>
   <div className='btn-group'>
     <a href="/profile" ><button className ="profile-btn" type="button"> Your Profile</button></a>
-    <a href="/doctorReview"><button className ="reviewform-btn" type="button"> Doctor Reviews</button></a>
+    <a href="/reports"><button className ="reviewform-btn" type="button"> Your Documents</button></a>
  </div>
 </div>
 </section>

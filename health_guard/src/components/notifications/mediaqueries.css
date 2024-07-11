@@ -1,0 +1,28 @@
+/* Media Queries */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    .appointments-container {
+        flex-direction: column;
+        margin-top: 40px;
+        width:100%;
+    }
+
+    .appointment-card__content {
+        padding: 10px;
+    }
+
+    .appointment-card__title {
+        font-size: 14px;
+    }
+
+    .appointment-card__message {
+        font-size: 12px;
+    }
+
+    .cancel-button {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+

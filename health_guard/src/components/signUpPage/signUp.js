@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Members from '../members/members';
 import './signUp.css';
 import { v4 as uuidv4 } from 'uuid'; 
+import './mediaqueries.css'
 
 const Sign_Up = () => {
   const nameRef = useRef();

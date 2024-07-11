@@ -1,17 +1,14 @@
 /* notifications.css */
 
 .appointments-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 250px;
+    display: flex;
+    gap:1rem;
     max-height: 60vh;
-    overflow-y: none;
     background-color: rgba(241, 242, 241, 0);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     padding: none;
     z-index: 1000;
+    margin-top:80px;
   }
   
   .appointment-card__content {

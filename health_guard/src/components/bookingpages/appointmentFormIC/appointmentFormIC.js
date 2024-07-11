@@ -91,7 +91,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
         <label id="role1" htmlFor="role">Role:</label>
         <input
           ref={roleRef}
-          className='booking-input'
+          className='booking-input2'
           list="data"
           id="role"
           value={role}
@@ -107,7 +107,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
         <label id="name1" htmlFor="name">Name:</label>
         <input
           ref={nameRef}
-          className='booking-input'
+          className='booking-input2'
           type="text"
           id="name"
           value={name}
@@ -119,7 +119,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
         <label id="number1" htmlFor="phoneNumber">Phone Number:</label>
         <input
           ref={phoneNumberRef}
-          className='booking-input'
+          className='booking-input2'
           type="tel"
           id="phoneNumber"
           value={phoneNumber}
@@ -131,7 +131,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
         <label id="date1" htmlFor="date">Date of the appointment:</label>
         <input
           ref={dateRef}
-          className='booking-input'
+          className='booking-input2'
           type="date"
           id="date"
           value={date}
@@ -144,7 +144,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
         <h5>Kindly note we are open from 6am until 8pm.</h5>
         <input
           ref={timeRef}
-          className='booking-input'
+          className='booking-input2'
           type="time"
           id="time"
           value={time}
@@ -158,8 +158,8 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
     </form>
 
     {bookingDetails && (
-        <div className="popup">
-          <div className="popup-content">
+        <div className="popup-booking-review">
+          <div className="popup-content-booking-review">
             <h2 className='booking-details'>Booking Details</h2>
             <p className='booking-role'><strong>Doctor:</strong> <span className="userrole">{doctorName}</span></p>
             <p className='booking-role'><strong>Speciality:</strong> <span className="userrole">{doctorSpeciality}</span></p>

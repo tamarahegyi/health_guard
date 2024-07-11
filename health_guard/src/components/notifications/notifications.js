@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './notifications.css';
+import './mediaqueries.css';
 
 const Notification = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

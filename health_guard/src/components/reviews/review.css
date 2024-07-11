@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+  a, .btn {
+    transition: all 300ms ease;
+  }
+
+  /*Table style*/
+
+  .doctor-search{
+    width:20%;
+    display: block;
+    margin-left:600px;
+    height: 10px;
+    margin: 10vh auto 5vh;
+  }
+  #specialities{
+    text-align: left;
+    padding:0.8rem 0.2rem;
+    border: 1px solid;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .table-data{
+    border-bottom:0.1px solid white;
+    height: 60px;
+  }
+  .table-header{
+    border-bottom:5px solid white;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .review-table{
+    margin-left:auto;
+    margin-right:auto;
+  }
+table{
+    width:100%;
+    text-align: center;
+}
+
+
+/*Popup style */
+
+.popup-content {
+  border-radius: 10px;
+  max-width: 500px;
+  padding:10px;
+}
+
+.popup-content h2 {
+  padding-top:15px;
+}
+
+.popup-content .star {
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(250, 239, 239);
+}
+
+.popup-content .star:hover{
+    color:gold;
+}
+
+.popup-content .star.selected {
+  color: gold;
+}
+
+.popup-content textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.review-submit-btn {
+  background-color:whitesmoke;
+  color: rgba(7, 110, 116, 1);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: auto;
+  width: 20%;
+  display: block;
+}
+
+.review-submit-btn:hover {
+  background-color: #577316;
+  color:white;
+}
+
+.delete-button {
+  background-color: rgb(232, 118, 118);
+  cursor: not-allowed;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.speciality{
+  color:black;
+}
+.name-input2{
+    width:80%;
+    margin:15px 0
+}
+.name-input2::placeholder{
+    color:rgb(195, 191, 191);
+}
