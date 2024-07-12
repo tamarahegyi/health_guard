@@ -1,0 +1,64 @@
+
+
+@media (max-width: 1200px) {
+    .submit {
+        width: 60%;
+        margin-left: 50px;
+    }
+    .form-group {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .submit {
+        width: 50%;
+        margin-left: 40px;
+    }
+    .form-group {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .submit {
+        width: 70%;
+        margin-left: 0;
+    }
+    .form-group {
+        width: 70%;
+    }
+    .popup-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .submit {
+        width: 80%;
+        margin-left: 0;
+    }
+    .form-group {
+        width: 80%;
+    }
+    .popup-content {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit {
+        width: 90%;
+        margin-left: 0;
+    }
+    .form-group {
+        width: 90%;
+    }
+    .popup-content {
+        padding: 5px;
+    }
+    .Cancel-button2 {
+        padding: 8px 15px;
+    }
+
+}

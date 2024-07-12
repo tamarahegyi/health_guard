@@ -1,41 +1,74 @@
 @media (max-width: 1024px) {
-    .doctor-search {
-      width: 30%;
-      margin-left: 400px; 
-    }
+  .doctor-search {
+    width: 50%;
+    margin: 2vh auto; 
   }
-  
-  @media (max-width: 768px) {
-    .doctor-search {
-      width: 40%;
-      margin-left: 200px; 
-      font-size: smaller;
-    }
-  
-    .popup-content {
-      max-width: 90%;
-    }
-  
-    .review-submit-btn {
-      width: 40%;
-    }
+
+  .popup-content {
+    max-width: 80%;
   }
-  
-  @media (max-width: 480px) {
-    .doctor-search {
-      width: 70%;
-      margin-left: 50px; 
-    }
-  
-    .popup-content {
-      max-width: 100%;
-    }
-  
-    .review-submit-btn {
-      width: 60%;
-    }
-  
-    .name-input2 {
-      width: 100%;
-    }
+
+  .review-submit-btn {
+    width: 50%;
   }
+}
+
+@media (max-width: 768px) {
+  .doctor-search {
+    width: 60%;
+    margin: 2vh auto; 
+    font-size: smaller;
+  }
+
+  .popup-content {
+    max-width: 90%;
+  }
+
+  .review-submit-btn {
+    width: 60%;
+  }
+
+  .name-input2 {
+    width: 90%;
+  }
+
+  .table-data,
+  .thank-you-message {
+    margin-bottom: 10px;
+  }
+
+  #review-button {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-search {
+    width: 80%;
+    margin: 2vh auto; 
+  }
+
+  .popup-content {
+    max-width: 100%;
+  }
+
+  .review-submit-btn {
+    width: 70%;
+  }
+
+  .name-input2 {
+    width: 100%;
+  }
+
+  .table-data{
+    font-size:10px ;
+    margin-bottom: 5px;
+  }
+
+  #review-button {
+    margin-bottom: -10px;
+    font-size: 10px;
+    border-radius: 8px;
+    padding:5px 5px;
+  }
+}

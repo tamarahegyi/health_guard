@@ -13,11 +13,11 @@
   /*Table style*/
 
   .doctor-search{
-    width:20%;
+    width:30%;
     display: block;
     margin-left:600px;
     height: 10px;
-    margin: 10vh auto 5vh;
+    margin: 10vh auto 8vh;
   }
   #specialities{
     text-align: left;
@@ -27,18 +27,20 @@
     cursor: pointer;
   }
   .table-data{
-    border-bottom:0.1px solid white;
-    height: 60px;
+border-bottom:solid 1px white;
+margin-top:30px;
   }
+  
+  .thank-you-message{
+    padding-top:30px;
+    font-size: 18px;
+  }
+
   .table-header{
-    border-bottom:5px solid white;
-    margin-left:auto;
-    margin-right:auto;
+    border-bottom:2px solid white;
+    
   }
-  .review-table{
-    margin-left:auto;
-    margin-right:auto;
-  }
+
 table{
     width:100%;
     text-align: center;
@@ -85,7 +87,6 @@ table{
   cursor: pointer;
   border-radius: 5px;
   margin: auto;
-  width: 20%;
   display: block;
 }
 

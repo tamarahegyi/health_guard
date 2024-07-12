@@ -120,7 +120,6 @@ const ReviewForm = () => {
               <th>Doctor's Speciality</th>
               <th>Doctor's Rating</th>
               <th>Provide Feedback</th>
-              <th>Review Given</th>
             </tr>
           </thead>
           <tbody>
@@ -129,10 +128,11 @@ const ReviewForm = () => {
                 <td className="table-data">{doctor.name}</td>
                 <td className="table-data">{doctor.speciality}</td>
                 <td className="table-data">{doctor.ratings}</td>
-                <td>
+                <td className='review-review'>
                   <button
                     type="button"
-                    className={`table-data ${submittedReviews[doctor.name] ? 'delete-button' : ''}`}
+                    id="review-button"
+                    className={`table-data login ${submittedReviews[doctor.name] ? 'delete-button' : ''}`}
                     onClick={() => {
                       if (submittedReviews[doctor.name]) {
                         handleReviewDelete(doctor.name);
@@ -141,10 +141,9 @@ const ReviewForm = () => {
                       }
                     }}
                   >
-                    {submittedReviews[doctor.name] ? 'Delete Review' : 'Click to leave a review'}
+                    {submittedReviews[doctor.name] ? 'Delete Review' : 'Leave a review'}
                   </button>
                 </td>
-                <td>{submittedReviews[doctor.name] ? 'Thank you for leaving a review' : ''}</td>
               </tr>
             ))}
           </tbody>

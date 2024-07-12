@@ -1,8 +1,10 @@
-.submit{
-   width:70%;
-   font-size: small;
-   border-radius: 50%;
-   margin-left:60px;
+.submit1{
+  display: block;
+  margin: 10px auto;
+}
+.appointments1{
+  display: block;
+  margin: auto;
 }
 .form-group{
     font-size: small;

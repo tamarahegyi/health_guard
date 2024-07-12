@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './appointmentFormIC.css';
 import { v4 as uuidv4 } from 'uuid';
+import './mediaqueries.css'
 
 const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
   const [name, setName] = useState('');
@@ -154,7 +155,8 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
           required
         />
       </div>
-      <button className="submit" type="submit">Book Now</button>
+      <a href="./FindDoctorSearchIC"className='appointments1'>Back to appointments page</a>
+      <button className="submit1 login" type="submit">Book Now</button>
     </form>
 
     {bookingDetails && (

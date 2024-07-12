@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './findDoctorSearchIC.css';
 import { useNavigate } from 'react-router-dom';
-import InstantConsultation from '../instantConsultation/instantConstultation';
+import './mediaqueries.css'
 
 const initSpeciality = [
     'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist', 'Ear-nose-throat (ent) Specialist', 'Homeopath', 'Ayurveda'

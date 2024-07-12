@@ -1,0 +1,81 @@
+@media (max-width: 1200px) {
+    .doctor-card-container {
+      width: 250px;
+    }
+  
+    .doctor-card-detail-name {
+      font-size: 16px;
+    }
+  
+    .doctor-card-detail-speciality {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .doctor-card-container {
+      width: 200px;
+    }
+  
+    .doctor-card-detail-name {
+      font-size: 14px;
+    }
+  
+    .doctor-card-detail-speciality {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .doctor-card-container {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .doctor-card-profile-image-container img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .doctor-card-detail-name {
+      font-size: 16px;
+    }
+  
+    .doctor-card-detail-speciality {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .doctor-card-container {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .doctor-card-profile-image-container img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .doctor-card-detail-name {
+      font-size: 14px;
+    }
+  
+    .doctor-card-detail-speciality {
+      font-size: 12px;
+    }
+  
+    .book-appoinment-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .modal-content {
+      max-width: 300px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 12px;
+    }
+  }

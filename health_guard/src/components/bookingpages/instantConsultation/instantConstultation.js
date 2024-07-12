@@ -3,6 +3,7 @@ import './instantConsultation.css';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import FindDoctorSearchIC from '../findDoctorSearchIC/findDoctorSearchIC.js';
 import DoctorCardIC from '../DoctorCardIC/doctorCardIC.js';
+import './mediaqueries.css'
 
 const InstantConsultation = () => {
     const [searchParams] = useSearchParams();

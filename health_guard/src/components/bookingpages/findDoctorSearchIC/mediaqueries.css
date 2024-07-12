@@ -1,0 +1,51 @@
+@media (max-width: 1200px) {
+    .find-doctor {
+      font-size: 2rem;
+    }
+  
+    .search-doctor-input-box {
+      width: 20rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .find-doctor {
+      font-size: 1.8rem;
+      margin-top:1vh;
+    }
+  
+    .search-doctor-input-box {
+      width: 25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .find-doctor {
+      font-size: 1.6rem;
+      margin-top: 8vh;
+    }
+  
+    .search-doctor-input-box {
+      width: 16rem;
+    }
+  
+    .search-doctor-result-item {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .find-doctor {
+      font-size: 1.4rem;
+      margin-top: 6vh;
+    }
+  
+    .search-doctor-input-box {
+      width: 18rem;
+      padding:8px 10px;
+    }
+  
+    .search-doctor-result-item {
+      font-size: 0.8rem;
+    }
+  }
