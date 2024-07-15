@@ -97,7 +97,7 @@ const ReviewForm = () => {
   );
 
   return (
-    <div>
+    <div className='reviews-reviews'>
       <div>
         <input 
           className="doctor-search"

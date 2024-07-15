@@ -50,12 +50,12 @@ const Profile = () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    const phonePattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+    const phonePattern = /^[0-9]{3}[0-9]{3}[0-9]{4}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordPattern = /^(?=(?:.*[A-Za-z]){2})(?=(?:.*\d){2}).{5,}$/;
 
     if (!phone.match(phonePattern)) {
-      alert("Please enter a valid phone number in the format 123-456-7890");
+      alert("Please enter a valid phone number in the format 1234567890");
       return false;
     }
 

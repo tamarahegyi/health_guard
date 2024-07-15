@@ -34,7 +34,7 @@ const FindDoctorSearchIC = () => {
             <div className='finddoctor'>
                 <center>
                     <h1 className='find-doctor'>Find a Doctor and Consult instantly</h1>
-                    <div><i style={{ color: 'rgba(7, 110, 116, 1)', fontSize: '20rem' }} className="fa fa-user-md"></i></div>
+                    <div><i style={{ color: 'rgba(7, 110, 116, 1)', fontSize: '20rem' }}></i></div>
                     <div className="home-search-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div className="doctor-search-box">
                             <input

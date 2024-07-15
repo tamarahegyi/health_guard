@@ -69,8 +69,6 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
       setDate('');
       setTime('');
       setRole('');
-
-      alert("Appointment booked successfully.");
     
     }
   };

@@ -79,3 +79,12 @@
       font-size: 12px;
     }
   }
+
+  @media (max-width:480px){
+
+    .popup-content{
+      width:100%;
+      overflow: auto;
+      height: 80%;
+    }
+  }

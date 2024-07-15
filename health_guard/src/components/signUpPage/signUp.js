@@ -40,7 +40,6 @@ const Sign_Up = () => {
       localStorage.setItem("users", JSON.stringify(localUsers));
       sessionStorage.setItem('isLoggedin', 'true')
       sessionStorage.setItem('signUp', newUserId)
-      alert("Account created successfully!");
       window.location.href = "/members";
     }
   };
@@ -66,30 +65,14 @@ const Sign_Up = () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    const phonePattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+    const phonePattern = /^[0-9]{3}[0-9]{3}[0-9]{4}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordPattern = /^(?=(?:.*[A-Za-z]){2})(?=(?:.*\d){2}).{5,}$/;
 
-    if (!name) {
-      alert("Name is required");
+    if (!name || !phone.match(phonePattern) || !email.match(emailPattern) || !password.match(passwordPattern) ) {
+      alert("Name is required. Please enter a valid phone number in the format 123456789.Valid email address and a password of minimum 5 characters 2 letters and 2 numbers");
       return false;
     }
-
-    if (!phone.match(phonePattern)) {
-      alert("Please enter a valid phone number in the format 123-456-7890");
-      return false;
-    }
-
-    if (!email.match(emailPattern)) {
-      alert("Please enter a valid email address");
-      return false;
-    }
-
-    if (!password.match(passwordPattern)) {
-      alert("Password must be at least 5 characters long and contain at least 2 letters and 2 numbers");
-      return false;
-    }
-
     return true;
   };
 
